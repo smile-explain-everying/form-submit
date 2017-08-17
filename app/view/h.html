@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="../static/js/jquery.min.js"></script>
+</head>
+<style>
+    .hhh{
+
+        margin:0 auto;
+
+    }
+    .aa{
+        width: 200px;
+        height: 200px;
+        background: red;
+        position: absolute;
+        top:100%;
+    }
+</style>
+<body  onload="scroller()">
+    <div class="hhh">
+        <img src="../static/images/4.jpg" height="10842" width="750" alt="">
+    </div>
+    <div class="aa"></div>
+</body>
+<script>
+   var locate=0;
+    function scroller(){
+        locate++;
+        scroll(0,locate);
+        var timer = setTimeout('scroller()');
+        if(locate % 1000 == 0){
+            clearTimeout(timer)
+        }
+    }
+   $('.aa').click(function(){
+       scroller()
+   })
+
+    // function scroller()
+    //     {
+    //     // if(locate!=600)
+    //     // {
+    //     locate++;
+    //     scroll(0,locate);
+    //     clearTimeout(timer);
+    //     var timer=setTimeout("scroller()");
+    //     timer;
+    //     // }
+    //     // if(locate==1000){
+    //     //     // scroll(0,locate);
+    //     //     clearTimeout(timer);
+    //     // }
+    //     // $('.aa').click(function() {
+    //     //     var timer=setTimeout("scroller()");
+    //     //      timer;
+    //     //      locate++;
+    //     //  });
+
+    //     //  if(locate==2000){
+    //     //     // scroll(0,locate);
+    //     //     clearTimeout(timer);
+    //     // }
+    // }
+    // var timer=setTimeout("scroller()",5);
+
+
+</script>
+</html>
