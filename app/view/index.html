@@ -23,37 +23,38 @@
 <body>
 	<!-- 内容 -->
 	<div class="content"> 
-		<div class="box">
+		<form class="box">
 			<p class="phone">
 				<span>手机号：</span>
-				<input type="number" placeholder="请输入手机号" name="phone" maxlength="16">
+				<input type="number" placeholder="请输入手机号" name="phone" maxlength="11">
 			    <span class="tip"><i>*</i><span>手机号码不能为空</span></span>
 			</p>
 			<p class="password">
 				<span>密码：</span>
-				<input type="password" placeholder="请输入密码">
-				 <span class="tip"><i>*</i><span>密码不能为空</span></span>
+				<input type="password" placeholder="请输入密码" name="password" maxlength="16">
+				 <span class="tip">
+					 <i>*</i>
+					 <span>密码不能为空</span>
+				 </span>
 			</p>
 			<p class="repassword">
 				<span>确认密码：</span>
-				<input type="password" placeholder="请再次输入密码">
+				<input type="password" placeholder="请再次输入密码" name="repassword">
 				  <span class="tip"><i>*</i><span>密码不能为空</span></span>
 			</p>
 			<p class="mailbox">
 				<span>邮箱：</span>
-				<input type="text" placeholder="请输入邮箱">
+				<input type="text" placeholder="请输入邮箱" name="mailbox">
 				 <span class="tip"><i>*</i><span>邮箱不能为空码</span></span>
 			</p>
 			<p class="idcard">
 				<span>身份证：</span>
-				<input type="text" placeholder="请输入身份证号码">
+				<input type="text" placeholder="请输入身份证号码" name="idcard">
 				 <span class="tip"><i>*</i><span>身份证号码不能为空</span></span>
 			</p>
-			<p>
-				<button class="tijiao">提交</button>
-				<button class="reset">重置</button>
-			</p>
-		</div>
+			<button class="submit but">提交</button>
+			<button class="reset but">重置</button>
+		</form>
 	</div>
 	<!-- 内容结束 -->
 	
